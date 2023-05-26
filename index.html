@@ -8,10 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Вход на сайт</h1>
-        <button><a href="index2.html">Войти</a></button>
-    </div>
+
+   <script language="JavaScript">
+        if (top.location.search=="") {
+        pass = prompt('Введите пароль');
+        if (pass=='Qwerty12345') // Ваш пароль акивации
+        { alert('Пароль принят') } else { alert('Пароль непринят!'), top.location.href="errorpas.htm" }//Адрес страниц на которую перейдет пользователь при ошибке
+        };
+        </script>
+            <div class="text">
+                <h10>DarkNet store</h10>
+            </div>
+        <div class="content">
+                <!-- <div class="card">
+                    <div class="left">
+                        <h1 class="title">Товар</h1>
+                        <p class="desc">Цена</p>
+                    </div>
+                    <div class="right">
+                        <div class="img"></div>
+                    </div>
+                    <div class="line"></div>
+                </div> -->
+            </div>
+            <div class="notification">
+                <div class="notification-header">
+                    <h3 class="notification-title">Добро пожаловать!</h3>
+                    <i class="fa fa-times notification-close"></i>
+                </div>
+                <div class="notification-container">
+                    <div class="notification-media">
+                        <img src="" alt="" class="notification-user-avatar">
+                        <i class="fa fa-thumbs-up notification-reaction"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p class="notification-text">
+                         <strong>Вы попали на сайт с ограниченым доступом!</strong>
+                        </p>
+                        <span class="notification-timer">Удачных покупок!</span>
+                    </div>
+                    <span class="notification-status"></span>
+                </div>
+            </div>
+
     <script src="script.js"></script>
 </body>
 </html>
